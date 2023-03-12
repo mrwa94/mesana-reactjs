@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/images/logo.png';
+import { AiOutlineWechat } from "react-icons/ai";
 
 function HeaderLogin() {
   return (
@@ -15,6 +16,10 @@ function HeaderLogin() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
+       
+        <Nav.Link href="#">
+          < AiOutlineWechat/>
+        </Nav.Link>
           <Nav.Link href="#">تسجيل الدخول</Nav.Link>
           <Nav.Link href="#">التسجيل </Nav.Link>
         </Nav>
