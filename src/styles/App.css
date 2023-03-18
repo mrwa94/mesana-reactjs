@@ -1,14 +1,123 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: var(--primary-font);
+}
+
+:root{
+    /* color */
+    --primary-color : #222A52 ;
+   --gray : #D0D0D0;
+   --base-color : #FAFAFA;
+   --sec-color: #EB455F;
+
+     /* fonts */
+   --primary-font:  'IBM Plex Sans';
+   --other-font : 'Varela Round', sans-serif ;
+}
 
 
 
+ .primary-btn{
+    outline: none;
+    background-color: var(--primary-color) !important;
+    color: #ffff !important;
+    font-family: var(--primary-font) !important;
+    padding: 5%;
+    border: none !important;
+
+  
+ }
 
 
-
-
-
-
-.nav-link{
+ .primary-color{
+    background-color: var(--primary-color);
+    color: #ffff;
+ }
  
 
-}
+
+
+
+   /* navbar */
+   .navbar{
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    
+   }
+
+   .nav-link{
+    color: var(--primary-color) !important;
+    font-size: 20px !important;
+   }
+   .header{
+     margin-right: 500px !important;
+
+     
+   }
+
+   .icon-header{
+    width: 30px !important;
+    height: 30px !important;
+   }
+
+   .profile-name{
+    font-family:var(--primary-font) !important;
+    font-size: 25px !important;
+    
+   }
+
+
+
+
+
+
+
+
+    /* contact us  page */
+       
+     .title{
+        font-size: 40px;
+        color: var(--primary-color);
+     }
+
+
+
+
+
+
+
+
+
+  /* footer */
+
+ footer{
+    background-color: var(--base-color);
+ }
+
+ .link{
+   color:var(--primary-color) !important;
+ }
+ 
+ .link:hover{
+    color: var(--sec-color) !important ;
+ }
+ 
+
+  .icon{
+    width: 12%;
+    height: 12%;
+   color: var(--primary-color);
+
+  }
+
+  .footer-logo{
+    text-align: left;
+  }
+
+  .footer-font{
+    font-family: var(--other-font);
+    font-size: 2rem !important;
+    color: var(--primary-color) !important;
+  }

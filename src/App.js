@@ -6,7 +6,9 @@ import Footer from './compontes/Footer';
 import Navbar from './compontes/Navbar';
 import Rejester from './Pages/Rejester';
 import Home from './Pages/Home';
-import SupportCards from './compontes/SupportCards';
+
+import ContactUs from './Pages/ContactUs';
+
 
 
 
@@ -15,9 +17,12 @@ function App() {
       <Fragment>
         {/* <Navbar/> */}
         {/* <Rejester/> */}
-        <Home/>
+        {/* <Home/> */}
        {/* <Footer/> */}
-       <SupportCards/>
+       {/* <SupportCards/> */}
+
+     
+       <ContactUs/>
       </Fragment>
   );
 }

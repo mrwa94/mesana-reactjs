@@ -9,49 +9,33 @@ import profile from '../assets/images/profile.png'
 
 function navbar() {
   return (
-    <Navbar bg="light" dir='rtl' expand="lg">
+    <Navbar className='navbar' bg="light" dir='rtl' expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
             <img src={logo}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className='px-5' >
-            <Nav.Link href="#action1">المتجر </Nav.Link>
-            <Nav.Link href="#action2">التحليلات و الأنشطة</Nav.Link>
-            <Nav.Link href="#action2">الطلبات</Nav.Link>
-            <Nav.Link href="#action2">المحفظة</Nav.Link>
-            <Nav.Link href="#action2">الموردين</Nav.Link>
+          <Nav className='px-5 pt-3' >
+            <Nav.Link className='nav-link' href="#action1">المتجر </Nav.Link>
+            <Nav.Link  className='nav-link'  href="#action2">التحليلات و الأنشطة</Nav.Link>
+            <Nav.Link className='nav-link'  href="#action2">الطلبات</Nav.Link>
+            <Nav.Link className='nav-link'  href="#action2">المحفظة</Nav.Link>
+            <Nav.Link className='nav-link'  href="#action2">الموردين</Nav.Link>
 
-  
+              <Nav className='header'>
+              <Nav.Link className='nav-link  '  href="#action2"><BsFillBellFill className='icon-header'/> </Nav.Link>
+             <Nav.Link className='nav-link '  href="#action2"><AiOutlineWechat className='icon-header'/> </Nav.Link>
+             <Nav.Link className='nav-link profile-name '  href="#action2">مروه الصبحي</Nav.Link>
+             <Nav.Link className='nav-link '  href="#action2"> <img src={profile} alt="profile image " /></Nav.Link>
 
-      <div className='px-5 p-2 '>
-             <a href='/'>
-            <BsFillBellFill/>
-              </a>
-         
-             <a href='/'>
-             <AiOutlineWechat/>
-             </a>
-             </div>
-
-
-             <div className='px-5  ' >
-                <p className='d-inline px-3'>مروه الصبحي</p>
-                <img src={profile}
-                alt="profile image ">
-
-                </img>
-             </div>
-      
-        
-
-         
-          </Nav>
-         
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              </Nav>
+            
+            
+               </Nav>
+             </Navbar.Collapse>
+          </Container>
+     </Navbar>
   );
 }
 
