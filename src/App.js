@@ -15,8 +15,8 @@ import ContactUs from './Pages/ContactUs';
 function App() {
   return (
       <Fragment>
-        {/* <Navbar/> */}
-        {/* <Rejester/> */}
+        {/* <Navbar/>  */}
+         {/* <Rejester/>  */}
         {/* <Home/> */}
        {/* <Footer/> */}
        {/* <SupportCards/> */}

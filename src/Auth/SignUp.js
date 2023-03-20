@@ -1,37 +1,81 @@
 import React from 'react'
-import { Container , Button , Form } from 'react-bootstrap'
+import '../styles/App.css'
+import { Container , Button , Form  , Tabs , Tab} from 'react-bootstrap'
+import {Company}  from '../compontes/Company'
+ import {Person} from '../compontes/Person'
+import Check from '../compontes/Check'
+import SucessCheck from '../compontes/SucessCheck'
+
 
 function SignUp() {
   return (
-    <Container>
-        <div className=''>
-         <Button variant="primary" className='mx-2'  type="submit">شركة توريد </Button>
-         <Button variant="primary" type="submit"> صاحب متجر </Button>
-         </div>
+
+  
+//     // <Container>
+
+//         /* <Container>
+//            <Tabs  defaultActiveKey="login"
+//                   id=""
+//                   className="mb-3  " >
+
+//              <Tab eventKey="person" 
+//                    title="شركة التوريد ">
+//                     <Person/>
+                    
+            
+//              </Tab>
+ 
+//              <Tab eventKey="sign-up" 
+//                   title="صاحب المتجر">
+//                     <Company/>
+               
+//              </Tab>
+//            </Tabs>
+//            </Container> */}
+
+//         {/* <div className=''>
+//          <Button variant="primary" className='mx-2'  type="submit">شركة توريد </Button>
+//          <Button variant="primary" type="submit"> صاحب متجر </Button>
+//          </div> */}
         
+// {/* 
+//        <div className='text-center '>
+//         <Button variant="primary"
+//          className='mx-2 primary-btn'
+//            type="submit">
+//               التالي
+//               </Button>
+        
+//         </div>
+//    </Container> */}
 
-    <Form className=''>
-      <Form.Group className="mb-3" controlId="phoneNumber">
-         <Form.Label> الاسم كامل</Form.Label>
-           <Form.Control type="text" placeholder="اسم الشركة" />
-            </Form.Group>
+<Container className='mt-5 '>
+<div className='login-form p-5 '>
+    
 
-     <Form.Group className="mb-3" controlId="password">
-       <Form.Label>كلمة المرور </Form.Label>
-         <Form.Control type="password" placeholder="********" />
-         </Form.Group>
+  {/* <Person/>
+  <Company/> */}
 
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <a href=''> هل نسيت كلمة المرور ؟ </a>
-       </Form.Group>
+  <SucessCheck/>
 
-       <div className='text-center '>
-        <Button variant="primary" className='mx-2'  type="submit"> تسجيل الدخول</Button>
-        <Button variant="primary" type="submit">الدعم الفني </Button>
+
+
+
+
+          <div className='text-center  '>
+          <Button variant="primary"
+         className='mx-2 primary-btn mt-3'
+           type="submit">
+              التالي
+              </Button>
+        
         </div>
 
-       </Form>
-   </Container>
+
+
+</div>
+</Container>
+
   )
 }
 

@@ -14,9 +14,11 @@ function Rejester() {
            <Container>
            <Tabs  defaultActiveKey="login"
                   id=""
-                  className="mb-3  " >
-             <Tab eventKey="login" 
-                   title="تسجيل الدخول">
+                  className="mb-3  primary-btn  " >
+             <Tab eventKey="login " 
+                   title="تسجيل الدخول"
+                   className='' >
+             
               <Login/>
              </Tab>
  
