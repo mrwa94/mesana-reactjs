@@ -6,8 +6,12 @@ import Footer from './compontes/Footer';
 import Navbar from './compontes/Navbar';
 import Rejester from './Pages/Rejester';
 import Home from './Pages/Home';
-
+import ForgetPasswords from './compontes/ForgetPassword';
 import ContactUs from './Pages/ContactUs';
+import HeaderLogin from './compontes/HeaderLogin';
+import Check from './compontes/Check';
+import SucessCheck from './compontes/SucessCheck';
+import Profile from './Pages/Profile';
 
 
 
@@ -15,14 +19,17 @@ import ContactUs from './Pages/ContactUs';
 function App() {
   return (
       <Fragment>
-        {/* <Navbar/>  */}
+        {/* <HeaderLogin/> */}
+        <Navbar/> 
          {/* <Rejester/>  */}
         {/* <Home/> */}
-       {/* <Footer/> */}
+        <Profile/>
+       {/* <Footer/>  */}
        {/* <SupportCards/> */}
-
-     
-       <ContactUs/>
+     {/* <Check/> */}
+     {/* <SucessCheck/> */}
+        {/* <ForgetPasswords/> */}
+       {/* <ContactUs/> */}
       </Fragment>
   );
 }

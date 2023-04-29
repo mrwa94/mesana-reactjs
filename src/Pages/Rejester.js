@@ -11,23 +11,22 @@ function Rejester() {
     
     <div>
            <HeaderLogin/>
-           <Container>
-           <Tabs  defaultActiveKey="login"
-                  id=""
-                  className="mb-3  primary-btn  " >
-             <Tab eventKey="login " 
-                   title="تسجيل الدخول"
-                   className='' >
-             
-              <Login/>
-             </Tab>
+          <Container className='login-form tabs '>
+              <Tabs  defaultActiveKey="login "
+                     id=""
+                     className="mb-3 " >
+                      <Tab eventKey="login " 
+                         title="تسجيل الدخول"
+                         className='tab' >
+                       <Login/>
+                     </Tab>
  
-             <Tab eventKey="sign-up" 
-                  title="التسجيل">
-              <SignUp/>
-             </Tab>
-           </Tabs>
-           </Container>
+                     <Tab eventKey="sign-up" 
+                          title="التسجيل">
+                         <SignUp/>
+                     </Tab>
+               </Tabs>
+          </Container>
    </div>
   )
 }

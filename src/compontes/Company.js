@@ -36,9 +36,11 @@ export const Company = () => {
                 </select>
        </Form.Group>
 
-       <Form.Group className="mb-3" controlId="password">
-     <Form.Label>   الموافقة على الشروط و الأحكام</Form.Label>
-       </Form.Group>
+       <Form.Group className="mb-3 " controlId="password">
+       <Form.Check className ='d-inline'  type="radio" aria-label="radio 1" />
+         <h5 className ='d-inline'> الموافقة على الشروط و الأحكام</h5>
+      </Form.Group>
+      
      </Form>
   )
 }

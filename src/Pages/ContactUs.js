@@ -4,6 +4,12 @@ import ContactCard from '../compontes/ContactCard';
 import Navbar from "../compontes/Navbar";
 import Footer from "../compontes/Footer"
 
+//icons
+import {AiFillTwitterSquare } from 'react-icons/ai'
+import {FaInstagramSquare}  from 'react-icons/fa'
+
+
+
 function ContactUs() {
 
   const data = [
@@ -24,6 +30,11 @@ function ContactUs() {
         "data" : ' +966 32478904',
         "Link" : ""
     } ,
+    { "image" : '',
+       'title': 'انستقرام',
+       'data': '@mesana',
+        'Link': ''
+    },
     
     {   
         "image":'',
@@ -33,7 +44,7 @@ function ContactUs() {
     } ,
     
     {
-        "image":'',
+        "image": <AiFillTwitterSquare/>,
         "title" : 'تويتر' ,
         "data" : ' Mesana@gmail.com' ,
         "Link" : "hello"
@@ -53,9 +64,11 @@ function ContactUs() {
 
      
           
+          <div className='row row-cols-1 row-cols-md-2 g-5 pb-5 '>
           {data.map ( (item)=> (
           <ContactCard image = {item.image} title = {item.title} data= {item.data} link = {item.link}/> 
           ))}
+          </div>
     
         </Container>
         <Footer/>

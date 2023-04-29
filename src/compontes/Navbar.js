@@ -6,8 +6,10 @@ import logo from '../assets/images/logo.png';
 import { BsFillBellFill } from "react-icons/bs";
 import { AiOutlineWechat } from "react-icons/ai";
 import profile from '../assets/images/profile.png'
+// import Profile from '../Pages/Profile';
 
 function navbar() {
+
   return (
     <Navbar className='navbar' bg="light" dir='rtl' expand="lg">
       <Container fluid>
@@ -27,7 +29,7 @@ function navbar() {
               <Nav.Link className='nav-link  '  href="#action2"><BsFillBellFill className='icon-header'/> </Nav.Link>
              <Nav.Link className='nav-link '  href="#action2"><AiOutlineWechat className='icon-header'/> </Nav.Link>
              <Nav.Link className='nav-link profile-name '  href="#action2">مروه الصبحي</Nav.Link>
-             <Nav.Link className='nav-link '  href="#action2"> <img src={profile} alt="profile image " /></Nav.Link>
+             <Nav.Link className='nav-link '  href="\Profile" > <img src={profile} alt="profile image " /></Nav.Link>
 
               </Nav>
             

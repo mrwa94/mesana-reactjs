@@ -4,9 +4,10 @@ import { Card } from 'react-bootstrap';
 
 function Cards(props) {
 
-  return (
 
-    <Card style={{ width: '18rem' }}>
+  return (
+<div className='px-3'>
+   <Card className='item '>
     <Card.Img variant="top" src={props.image} />
     <Card.Body>
       <Card.Title>{props.companyName}</Card.Title>
@@ -16,6 +17,9 @@ function Cards(props) {
       
     </Card.Body>
   </Card>
+
+</div>
+  
   )
 }
 

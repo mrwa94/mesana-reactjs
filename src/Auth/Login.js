@@ -6,13 +6,12 @@ function Login() {
   return (
 
     <Container className='mt-5 '>
-       <Form className='login-form p-5 '>
+       <Form className=' p-5 '>
 
     <Form.Group className="mb-4  " controlId="phoneNumber">
       <Form.Label className='mx-2'>رقم الهاتف</Form.Label>
       <Form.Control type="text" placeholder="+966" className='input' />
       <Form.Text className="text-muted">
-        
       </Form.Text>
     </Form.Group>
 

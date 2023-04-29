@@ -1,10 +1,16 @@
 import React from 'react'
-import {Form} from 'react-bootstrap'
+import {Button, Form} from 'react-bootstrap'
+
 
 export const Person = () => {
   return (
+     <div>
+      <div className='px-2 mb-5'>
+        <Button className='primary-btn mx-2 '>شركة توريد</Button>
+        <Button className='primary-btn'> صاحب المتجر</Button>
+     </div> 
 
-    <Form className=''>
+     <Form className=''>
          <Form.Group className="mb-3" controlId="phoneNumber">
        <Form.Label> الإسم كامل</Form.Label>
          <Form.Control type="text" placeholder=" الاسم كامل " className='input' />
@@ -27,5 +33,7 @@ export const Person = () => {
 
 
     </Form>
+     </div>
+    
   )
 }
