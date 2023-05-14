@@ -47,6 +47,8 @@
  .link-hover {
 
  }
+ 
+
 
 
 
@@ -72,6 +74,7 @@
 
  a{
     text-decoration: none !important ;
+    color: var(--primary-color) !important;
  }
  a:hover{
     color: var(--sec-color) !important;

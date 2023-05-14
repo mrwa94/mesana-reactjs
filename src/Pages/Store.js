@@ -1,7 +1,8 @@
 
 import React  , {label  ,useState} from 'react'
-import {Row , Col , Tab, Card , CardGroup   } from 'react-bootstrap'
+import {Row , Col , Tab, Card , CardGroup , Pagination  } from 'react-bootstrap'
 import Select from 'react-select';
+
 
 //icons
 import { BsSearch } from "react-icons/bs";
@@ -11,14 +12,33 @@ import { AiTwotoneFilter } from "react-icons/ai";
 
 
 //compontes
-
-
 import StoreCard from '../compontes/StoreCard';
 
 
 
 
 function Store() {
+
+
+
+  //Pagination
+  let active = 1;
+  let items = [];
+  for (let number = 1; number <= 15; number++) {
+
+    items.push(
+      <Pagination.Item className='' key={number} active={number === active}>
+        {number}
+      </Pagination.Item>
+    );
+  }
+  
+
+
+
+
+
+
  //select
 
  const selects = [
@@ -140,7 +160,11 @@ function Store() {
                     </CardGroup>
                   </div>
 
-
+                  
+            {/* Pagination */}
+            <div className='p-5 '>
+       <Pagination className='' size="lg">{items}</Pagination>
+     </div>
                   
 
                 
@@ -148,6 +172,9 @@ function Store() {
 
 
             </Row>
+
+
+
 
 
 
