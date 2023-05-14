@@ -3,7 +3,9 @@
 import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Compontes
 import Navbar from './compontes/Navbar';
+import Footer from './compontes/Footer';
 
 //pages
 import Store from './Pages/Store';
@@ -80,6 +82,8 @@ function App() {
     <Route path='/suppliers' element = {<Suppliers/>}></Route>
     <Route path='/profile' element = {<Profile/>}></Route>
     </Routes>
+
+    <Footer/>
     
   </Router>
   

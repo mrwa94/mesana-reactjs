@@ -8,11 +8,6 @@ import { Chat } from '../compontes/Chat'
 const Profile = () => {
   return (
     <div>
-{/* 
-        <div className='profileList'>
-            <a>الملف الشخصي</a>
-            <a>الرسائل</a>
-        </div> */}
 
 
 <Tab.Container id="" defaultActiveKey="first" >

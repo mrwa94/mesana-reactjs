@@ -219,8 +219,8 @@
        /* Card */
    
      .card{
-        width: 290px !important;
-        height: 340px !important;
+        width: 250px !important;
+        height: 400px !important;
         /* display: inline !important; */
         /* background-color: var(--base-color) !important; */
         /* margin-right: 8%; */

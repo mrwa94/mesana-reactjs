@@ -6,7 +6,7 @@ function Cards(props) {
 
 
   return (
-<div className='px-3'>
+<div className=''>
    <Card className='item '>
     <Card.Img variant="top" src={props.image} />
     <Card.Body>

@@ -11,10 +11,11 @@ const ProfileDetails = () => {
        <p className='primary-text-color fs-3'>المعلومات الشخصية</p>
      <div className=''>
       <Form className='d-flex '>
-          <Form.Group className="mb-3 mx-5 " controlId="">
-          <Form.Label>الاسم كامل</Form.Label>
-           <Form.Control type="name" placeholder="مثال: الإسم الرسمي للمؤسسة" />
-       </Form.Group>
+
+          <Form.Group className="mb-3 " controlId="">
+             <Form.Label>الاسم كامل</Form.Label>
+               <Form.Control className='p-3 ' type="name" placeholder="مثال: الإسم الرسمي للمؤسسة" />
+          </Form.Group>
 
 <Form.Group className="mb-3" controlId="">
 <Form.Label>رقم الهاتف</Form.Label>
@@ -25,7 +26,7 @@ const ProfileDetails = () => {
 
 <div className=''>
 <Form className='d-flex  '>
-  <Form.Group className="mb-3 mx-5 " controlId="">
+  <Form.Group className="mb-3  " controlId="">
 <Form.Label> البريد الالكتروني</Form.Label>
   <Form.Control type="name" placeholder="مثال: الإسم الرسمي للمؤسسة" />
 </Form.Group>
