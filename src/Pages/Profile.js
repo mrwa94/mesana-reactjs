@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container , Col , Nav , Row , Tab} from 'react-bootstrap'
+import {  Col , Nav , Row , Tab} from 'react-bootstrap'
 import ProfileDetails from '../compontes/ProfileDetails'
 import MessageDirect from '../compontes/MessageDirect'
 import { Chat } from '../compontes/Chat'

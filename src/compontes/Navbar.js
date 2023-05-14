@@ -8,28 +8,64 @@ import { AiOutlineWechat } from "react-icons/ai";
 import profile from '../assets/images/profile.png'
 // import Profile from '../Pages/Profile';
 
+// router 
+import { BrowserRouter , Routes , Route, Link, Outlet } from 'react-router-dom';
+import Home from '../Pages/Home'
+import Store from '../Pages/Store';
+
 function navbar() {
 
   return (
-    <Navbar className='navbar' bg="light" dir='rtl' expand="lg">
+
+    <>
+
+<Navbar className='navbar' bg="light" dir='rtl' expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
             <img src={logo}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
+          
           <Nav className='px-5 pt-3' >
-            <Nav.Link className='nav-link' href="#action1">المتجر </Nav.Link>
-            <Nav.Link  className='nav-link'  href="#action2">التحليلات و الأنشطة</Nav.Link>
-            <Nav.Link className='nav-link'  href="#action2">الطلبات</Nav.Link>
-            <Nav.Link className='nav-link'  href="#action2">المحفظة</Nav.Link>
-            <Nav.Link className='nav-link'  href="#action2">الموردين</Nav.Link>
+            <Nav.Link className='nav-link'> 
+            <Link to={"/store"}>
+            المتجر
+            </Link>
+            </Nav.Link>
+            <Nav.Link  className='nav-link'>
+              <Link to={"/analys"}>
+              التحليلات و الأنشطة
+              </Link>
+            </Nav.Link>
+            <Nav.Link className='nav-link'>
+              <Link to={"/requests"}>
+              الطلبات
+              </Link>
+            </Nav.Link>
+            <Nav.Link className='nav-link'>
+              <Link to={"/wallet"}>
+              المحفظة
+              </Link>
+            </Nav.Link>
+            <Nav.Link className='nav-link'>
+              <Link to={"/suppliers"}>
+              الموردين
+              </Link>
+            </Nav.Link>
 
               <Nav className='header'>
               <Nav.Link className='nav-link  '  href="#action2"><BsFillBellFill className='icon-header'/> </Nav.Link>
              <Nav.Link className='nav-link '  href="#action2"><AiOutlineWechat className='icon-header'/> </Nav.Link>
-             <Nav.Link className='nav-link profile-name '  href="#action2">مروه الصبحي</Nav.Link>
-             <Nav.Link className='nav-link '  href="\Profile" > <img src={profile} alt="profile image " /></Nav.Link>
+             <Nav.Link className='nav-link profile-name'>
+            <Link to={"/profile"}>
+            مروه الصبحي
+            </Link>
+           
+            
+
+             </Nav.Link>
+             <Nav.Link className='nav-link '> <img src={profile} alt="profile image " /></Nav.Link>
 
               </Nav>
             
@@ -37,7 +73,33 @@ function navbar() {
                </Nav>
              </Navbar.Collapse>
           </Container>
+         
      </Navbar>
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </>
+   
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
   );
 }
 
