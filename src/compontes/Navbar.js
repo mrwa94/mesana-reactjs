@@ -9,7 +9,7 @@ import profile from '../assets/images/profile.png'
 // import Profile from '../Pages/Profile';
 
 // router 
-import { BrowserRouter , Routes , Route, Link, Outlet } from 'react-router-dom';
+import {   Link  } from 'react-router-dom';
 import Home from '../Pages/Home'
 import Store from '../Pages/Store';
 

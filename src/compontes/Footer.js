@@ -1,9 +1,16 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav';
+import {Link} from 'react-router-dom';
+
+//images
 import '../styles/App.css';
 import logo from '../assets/images/logo.png';
+
+//icons
 import {AiFillTwitterSquare } from 'react-icons/ai'
 import {FaInstagramSquare}  from 'react-icons/fa'
+
+
 
 
 const Footer = () => {
@@ -14,13 +21,25 @@ const Footer = () => {
 <Nav  className=" px-5 " activeKey="/home">
        <div className='justify-content-end'>
        <Nav.Item>
-          <Nav.Link  className='link' href="/home">التحليلات والأنشطة</Nav.Link>
+          <Nav.Link  className='link' href="/home">
+          <Link to={"/analys"}>
+              التحليلات و الأنشطة
+              </Link>
+             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className='link' herf= "/" eventKey="">الطلبات</Nav.Link>
+          <Nav.Link className='link' herf= "/" eventKey="">
+          <Link to={"/requests"}>
+              الطلبات
+              </Link>
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className='link'  herf= "/"  eventKey="">المتجر</Nav.Link>
+          <Nav.Link className='link'  herf= "/"  eventKey="">
+          <Link to={"/store"}>
+            المتجر
+            </Link>
+          </Nav.Link>
         </Nav.Item>
        </div>
 
@@ -31,11 +50,18 @@ const Footer = () => {
         </Nav.Item>
 
         <Nav.Item>
-          <Nav.Link  className='link' herf= "/"  eventKey=""> الموردين</Nav.Link>
-        </Nav.Item>
+        <Nav.Link className='nav-link'>
+              <Link to={"/suppliers"}>
+              الموردين
+              </Link>
+            </Nav.Link>        </Nav.Item>
 
         <Nav.Item>
-          <Nav.Link  className='link'  herf = "/"   eventKey=""> المحفظة</Nav.Link>
+          <Nav.Link  className='link'  herf = "/"   eventKey=""> 
+          <Link to={"/wallet"}>
+              المحفظة
+              </Link>
+          </Nav.Link>
         </Nav.Item>
       </div>
         
