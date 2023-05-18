@@ -1,6 +1,6 @@
 
 import React  , {label  ,useState} from 'react'
-import {Row , Col , Tab, Card , CardGroup , Pagination  } from 'react-bootstrap'
+import {Row , Col , Tab, Card , CardGroup , Pagination  ,Button } from 'react-bootstrap'
 import Select from 'react-select';
 
 
@@ -13,11 +13,13 @@ import { AiTwotoneFilter } from "react-icons/ai";
 
 //compontes
 import StoreCard from '../compontes/StoreCard';
+import ProductDetails from '../Pages/ProductDetails';
 
 
 
 
 function Store() {
+
 
 
 
@@ -76,6 +78,13 @@ function Store() {
       setSecond(!second)
     }
   }
+
+
+   const test = () => {
+ return(
+  <ProductDetails/>
+ )
+   }
   return (
    
 
@@ -122,20 +131,34 @@ function Store() {
 
             {/* Container */}
                 <Col>
-                 {/* search bar */}
+
+                 {/* search div */}
                  <div className='px-5 mx-5'>
                   <a className='px-3 ' > حلويات</a>
                   <a className='px-3'>مخبوزات </a>
                   <a className='px-3'> حلويات</a>
 
 
-                  <div className='searchBar d-inline'>
-                  <BsSearch className='primary-color '/>
-                  <input type= 'search'  placeholder='البحث عن '/> 
+
+        {/* search bar */}
+                  <div className='search-bar d-inline'>
+
+
+         {/* search input  */}
+                  <input className='search-input ' type= 'search'  placeholder='البحث عن ' /> 
+                 
+
+        {/* search button */}
+                    <button className='search-button'>
+                    <BsSearch className='primary-color '/>
+                    </button>
+
+
+
                     </div>
 
 
-                    {/* search by  filter */}
+         {/* search by  filter */}
                     <div className='d-inline'>
                       <AiTwotoneFilter/>
                     </div>
@@ -144,6 +167,8 @@ function Store() {
 
                   {/************************************ Cards ********************/}
                   <div>
+
+                    {/* فقط للتجربة في الوقت الحالي  */}
              
                      <CardGroup  style={{ width: '70rem' }}>
                      <StoreCard  />
@@ -152,13 +177,9 @@ function Store() {
                      <StoreCard/>
                     </CardGroup>
 
-                    <CardGroup  style={{ width: '70rem' }}>
-                     <StoreCard  />
-                     <StoreCard />
-                     <StoreCard/>
-                     <StoreCard/>
-                    </CardGroup>
                   </div>
+
+                  
 
                   
             {/* Pagination */}

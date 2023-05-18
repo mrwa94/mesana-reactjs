@@ -3,6 +3,7 @@ import {  Col , Nav , Row , Tab} from 'react-bootstrap'
 import ProfileDetails from '../compontes/ProfileDetails'
 import MessageDirect from '../compontes/MessageDirect'
 import { Chat } from '../compontes/Chat'
+import ProductDetails from '../Pages/ProductDetails'
 
 
 const Profile = () => {
@@ -51,8 +52,9 @@ const Profile = () => {
             <Tab.Pane eventKey="first"> <ProfileDetails/> </Tab.Pane>
             <Tab.Pane eventKey="second"><MessageDirect/></Tab.Pane>
             <Tab.Pane eventKey="third">   <Chat/>  </Tab.Pane>
+            <Tab.Pane eventKey="four">   <   ProductDetails/>  </Tab.Pane>
 
-
+         
           </Tab.Content>
         </Col>
       </Row>

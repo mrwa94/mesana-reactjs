@@ -285,6 +285,77 @@
 }
 
 
+
+/************************ store page  *******************************/
+
+ 
+
+/* search bar  */
+
+
+
+/* search input */
+.search-input{
+   border: 2px solid var(--primary-color) !important;
+   outline: none;
+   width: calc(100%- 64%);
+   height: 100%;
+   border-radius: 4rem;
+   padding-left: 14px;
+   font-family: var(--primary-font);
+   font-size: 20px;
+   font-weight: 500;
+}
+.search-input:-webkit-autofill {
+   box-shadow : 0 0 0 100px var(--base-color) inset ;
+
+}
+
+.search-input::placeholder{
+   padding-right: 10px !important;
+   font-size: 15px !important;
+   font-family: var(--other-font) !important;
+
+}
+
+/* search button  */
+
+.search-button{
+   border: none !important;
+   width: 30px;
+   height: 30px;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   left:10px;
+   right:0;
+   top:0;
+   place-items: center;
+   cursor: pointer;
+}
+
+
+
+   /* add to cart button */
+   .card-btn{
+      border: none !important;
+      outline: none;
+      background-color: var(--primary-color);
+      width: 300px;
+      border-radius: 20px;
+      color: var(--base-color);
+      height: 40px !important;
+   }
+
+
+
+
+
+
+
+
+
+
+
   /* footer */
 
  footer{
