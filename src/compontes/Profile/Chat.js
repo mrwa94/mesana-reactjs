@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import storeLogo from '../assets/images/store.png'
+import storeLogo from '../../assets/images/store.png'
 // icons
 import { AiFillStar , AiOutlineStar , AiOutlineLink } from "react-icons/ai";
 import { MdLocalGroceryStore , MdEmail , MdLocationOn } from "react-icons/md";

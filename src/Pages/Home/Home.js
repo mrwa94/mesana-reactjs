@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Card, Container, Navbar } from 'react-bootstrap'
-import Cards from '../compontes/Cards';
+import Cards from '../../compontes/Home/Cards';
 //import Navbar from '../compontes/Navbar';
 
 //import images
-import image from '../assets/images/card.png'
-import WalletCard from '../compontes/WalletCard';
+import image from '../../assets/images/card.png'
+import WalletCard from '../../compontes/Home/WalletCard';
 
 
 

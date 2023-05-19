@@ -1,17 +1,23 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/App.css';
-import logo from '../assets/images/logo.png';
+
+//import '../../styles/App.css';
+
+//image 
+import logo from '../../assets/images/logo.png';
+import profile from '../../assets/images/profile.png'
+
+//icons
 import { BsFillBellFill } from "react-icons/bs";
 import { AiOutlineWechat } from "react-icons/ai";
-import profile from '../assets/images/profile.png'
+
 // import Profile from '../Pages/Profile';
 
 // router 
 import {   Link  } from 'react-router-dom';
-import Home from '../Pages/Home'
-import Store from '../Pages/Store';
+import Home from '../../Pages/Home/Home'
+import Store from '../../Pages/Store/Store';
 
 function navbar() {
 

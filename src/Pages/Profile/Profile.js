@@ -1,9 +1,9 @@
 import React from 'react'
 import {  Col , Nav , Row , Tab} from 'react-bootstrap'
-import ProfileDetails from '../compontes/ProfileDetails'
-import MessageDirect from '../compontes/MessageDirect'
-import { Chat } from '../compontes/Chat'
-import ProductDetails from '../Pages/ProductDetails'
+import ProfileDetails from '../../compontes/Profile/ProfileDetails'
+import MessageDirect from '../../compontes/Profile/MessageDirect'
+import { Chat } from '../../compontes/Profile/Chat'
+import ProductDetails from '../../compontes/Store/ProductDetails'
 
 
 const Profile = () => {

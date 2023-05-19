@@ -4,19 +4,20 @@ import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Compontes
-import Navbar from './compontes/Navbar';
-import Footer from './compontes/Footer';
+import Navbar from './compontes/Header&Footer/Navbar';
+import Footer from './compontes/Header&Footer/Footer';
 
 //pages
-import Store from './Pages/Store';
-import Suppliers from './Pages/Suppliers'
-import Wallet from './Pages/Wallet'
-import Requests from './Pages/Requests';
-import Profile from './Pages/Profile';
+import Store from './Pages/Store/Store';
+import Suppliers from './Pages/Suppliers/Suppliers'
+import Wallet from './Pages/Wallet/Wallet'
+import Requests from './Pages/Requests/Requests';
+import Profile from './Pages/Profile/Profile';
+import Analys from './Pages/Analys/Analys';
 
 // router 
 import { BrowserRouter  as Router , Route , Routes } from 'react-router-dom';
-import Analys from './Pages/Analys';
+
 
 
 

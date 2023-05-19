@@ -12,11 +12,12 @@ import { AiTwotoneFilter } from "react-icons/ai";
 
 
 //compontes
-import StoreCard from '../compontes/StoreCard';
-import ProductDetails from '../Pages/ProductDetails';
+import StoreCard from '../../compontes/Store/StoreCard';
+import ProductDetails from '../../compontes/Store/ProductDetails';
 
 
-
+//image
+import product from '../../assets/images/product.png'
 
 function Store() {
 
@@ -85,12 +86,34 @@ function Store() {
   <ProductDetails/>
  )
    }
+
+   const cardDetails = [{
+    imgProduct : {product} ,
+    title : 'العنوان' ,
+    detailsProduct : 'تفاصيل' ,
+    priceProduct : '$ 100 '
+ } ,
+ {
+ imgProduct : {product} ,
+ title : 'العنوان' ,
+ detailsProduct : 'تفاصيل' ,
+ priceProduct : '$ 100 '
+}
+    
+
+
+
+
+ ]
+
+
+
+
+
+
+
   return (
-   
-
-   
-
-      
+    
     <div className='p-3'>
 
         <Tab.Container>
@@ -171,10 +194,19 @@ function Store() {
                     {/* فقط للتجربة في الوقت الحالي  */}
              
                      <CardGroup  style={{ width: '70rem' }}>
-                     <StoreCard  />
-                     <StoreCard />
-                     <StoreCard/>
-                     <StoreCard/>
+                     {cardDetails.map((product)=> (
+                        <StoreCard imgProduct = {product.imgProduct} 
+                                  title       = {product.title}
+                                  detailsProduct = {product.detailsProduct}
+                                  priceProduct = {product.priceProduct}
+
+                        />
+                     )
+                          
+
+                         )} 
+                    
+                    
                     </CardGroup>
 
                   </div>

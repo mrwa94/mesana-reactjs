@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Message from './Message'
-import image from '../assets/images/card.png'
+import image from '../../assets/images/card.png'
 
 function MessageDirect () {
 

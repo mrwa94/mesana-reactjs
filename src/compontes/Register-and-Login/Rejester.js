@@ -2,8 +2,8 @@ import React from 'react'
 import HeaderLogin from '../compontes/HeaderLogin'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Login from '../Auth/Login';
-import SignUp from '../Auth/SignUp';
+import Login from '../../Auth/Login';
+import SignUp from '../../Auth/SignUp';
 import { Container } from 'react-bootstrap';
 
 function Rejester() {

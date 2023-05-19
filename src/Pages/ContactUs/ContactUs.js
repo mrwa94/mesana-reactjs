@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
-import ContactCard from '../compontes/ContactCard';
-import Navbar from "../compontes/Navbar";
-import Footer from "../compontes/Footer"
+import ContactCard from '../../compontes/ContactUs/ContactCard';
+import Navbar from "../../compontes/Header&Footer/Navbar";
+import Footer from "../../compontes/Header&Footer/Footer"
 
 //icons
 import {AiFillTwitterSquare } from 'react-icons/ai'
