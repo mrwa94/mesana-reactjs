@@ -1,28 +1,20 @@
 
 import React  , {label  ,useState} from 'react'
-import {Row , Col , Tab, Card , CardGroup , Pagination  ,Button } from 'react-bootstrap'
-import Select from 'react-select';
+import {Row , Col , Tab  , Pagination  , Container } from 'react-bootstrap'
 
+import Select from 'react-select';
 
 //icons
 import { BsSearch } from "react-icons/bs";
 import { AiTwotoneFilter } from "react-icons/ai";
 
-
-
-
 //compontes
 import StoreCard from '../../compontes/Store/StoreCard';
 import ProductDetails from '../../compontes/Store/ProductDetails';
+import {cardDetails} from '../../Data/CardData';
 
-
-//image
-import product from '../../assets/images/product.png'
 
 function Store() {
-
-
-
 
   //Pagination
   let active = 1;
@@ -37,15 +29,9 @@ function Store() {
   }
   
 
-
-
-
-
-
  //select
 
  const selects = [
-
  { type : "Chocolate" , id : 1 , label : "Chocolate"} ,
  { type : "strawberry" , id : 2 ,label : "strawberry"} ,
  { type : "clothes" , id : 1 , label : "Vanilla"} ,
@@ -87,31 +73,7 @@ function Store() {
  )
    }
 
-   const cardDetails = [{
-    imgProduct : {product} ,
-    title : 'العنوان' ,
-    detailsProduct : 'تفاصيل' ,
-    priceProduct : '$ 100 '
- } ,
- {
- imgProduct : {product} ,
- title : 'العنوان' ,
- detailsProduct : 'تفاصيل' ,
- priceProduct : '$ 100 '
-}
-    
-
-
-
-
- ]
-
-
-
-
-
-
-
+ 
   return (
     
     <div className='p-3'>
@@ -171,14 +133,11 @@ function Store() {
                   <input className='search-input ' type= 'search'  placeholder='البحث عن ' /> 
                  
 
-        {/* search button */}
+         {/* search button */}
                     <button className='search-button'>
                     <BsSearch className='primary-color '/>
                     </button>
-
-
-
-                    </div>
+                 </div>
 
 
          {/* search by  filter */}
@@ -190,25 +149,17 @@ function Store() {
 
                   {/************************************ Cards ********************/}
                   <div>
-
                     {/* فقط للتجربة في الوقت الحالي  */}
              
-                     <CardGroup  style={{ width: '70rem' }}>
-                     {cardDetails.map((product)=> (
-                        <StoreCard imgProduct = {product.imgProduct} 
-                                  title       = {product.title}
-                                  detailsProduct = {product.detailsProduct}
-                                  priceProduct = {product.priceProduct}
-
-                        />
-                     )
-                          
-
-                         )} 
-                    
-                    
-                    </CardGroup>
-
+                     <div className='row'  style={{ width: '70rem' }}>
+                      {cardDetails.map((product)=> (
+                       <StoreCard className = 'col'   imgProduct = {product.imgProduct} 
+                        title = {product.title}
+                         detailsProduct = {product.detailsProduct}
+                         priceProduct = {product.priceProduct}
+                          />
+                         ))} 
+                    </div>
                   </div>
 
                   

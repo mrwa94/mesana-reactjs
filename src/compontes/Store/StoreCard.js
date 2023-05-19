@@ -21,7 +21,7 @@ function StoreCard(props){
 
           <img src ={props.imgProduct} 
            style={{ height: '12rem' }} 
-           className='p-2 rounded'/>
+           className='pt-1 rounded'/>
 
           <div className= "card-body">
             <h2>{props.title}</h2>
@@ -32,18 +32,9 @@ function StoreCard(props){
             // onClick={<ProductDetails/>} 
             className = "primary-btn rounded text-center">
                أضف الى طلباتي
+               <HiShoppingCart/>
               </button> 
-                     
-              
-                    
-               
-            
-
           </div>
- 
-
- 
-            
            </div>
 
     
