@@ -35,6 +35,8 @@ function StoreCard(props){
                <HiShoppingCart/>
               </button> 
           </div>
+
+          
            </div>
 
     

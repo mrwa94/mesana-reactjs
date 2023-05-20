@@ -9,11 +9,14 @@ import { BsStarFill, BsStar, BsFillCartFill } from "react-icons/bs";
 //images
 import productImage from "../../assets/images/storeDetails.png";
 import productImage2 from "../../assets/images/coffee.png";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image , Nav, Tabs , Tab } from "react-bootstrap";
 
 import StoreCard from "./StoreCard";
+import MoreDetails from "../Store/MoreDetails";
+import Reviwes from "./Reviwes";
+import { cardDetails } from "../../Data/CardData";
 
-function ProductDetails() {
+function ProductDetails(props) {
 
   //add to cart counter
   const [counter, setCounter] = useState(0);
@@ -34,7 +37,7 @@ function ProductDetails() {
           <Carousel.Item className="">
             <img
               className="d-block w-100 "
-              src={productImage}
+              src={props.imgProduct}
               alt="First image product"
             />
           </Carousel.Item>
@@ -42,7 +45,7 @@ function ProductDetails() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={productImage2}
+              src={props.detailsImage}
               alt="Second image product"
             />
           </Carousel.Item>
@@ -50,7 +53,7 @@ function ProductDetails() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={productImage}
+              src={props.detailsImage2}
               alt="Third image product"
             />
           </Carousel.Item>
@@ -60,14 +63,14 @@ function ProductDetails() {
 
         <Row className="pt-5">
           <Col>
-            <Image src={productImage} rounded className="w-100" />
+            <Image src={props.imgProduct} rounded className="w-100" />
           </Col>
           <Col>
-            <Image src={productImage} className="w-100" rounded />
+            <Image src={props.detailsImage} className="w-100" rounded />
           </Col>
 
           <Col>
-            <Image src={productImage} className="w-100" rounded />
+            <Image src={props.detailsImage2} className="w-100" rounded />
           </Col>
         </Row>
       </div>
@@ -75,10 +78,11 @@ function ProductDetails() {
   };
 
   return (
+<>
     <div className="p-5 m-5 row ">
       <div className="col details-product w-50">
-        <h4> اسم المنتج</h4>
-        <p> نوع المنتج </p>
+        <h4> {props.title}</h4>
+        <p>  {props.detailsProduct} </p>
 
         {/* rate products */}
         <div className="rate color">
@@ -90,9 +94,9 @@ function ProductDetails() {
         </div>
 
         {/* go to a store website , i think   */}
-        <a href="">اسم المتجر </a>
+        <a href=""> {props.storeName} </a>
 
-        <p className="">سعر المنتج</p>
+        <p className="">{props.priceProduct} </p>
 
         <div>
           {/* add to and remove from cart */}
@@ -101,6 +105,7 @@ function ProductDetails() {
               placeholder="Please select size  "
               className="mx-2 w-50 "
               type="text"
+              value= ''
             />
 
             <div className="d-inline ">
@@ -130,7 +135,43 @@ function ProductDetails() {
 
       {/* image details  */}
       <div className="col ">{CarouselDetails()}</div>
+
+
+    {/* details about product && reviwes */}
     </div>
+
+      <div className="w-50" >
+      
+      <Tabs
+         defaultActiveKey="detailsProduct"
+         id="uncontrolled-tab-example"
+         className="mb-3"
+        >
+
+      <Tab eventKey="detailsProduct"
+           title= "تفاصيل المنتج">
+             {cardDetails.map((item) => (
+
+               <MoreDetails moreDetails = {item.moreDetails} />
+
+             )
+             )}
+
+        
+      </Tab>
+
+      <Tab eventKey="reviewProduct"
+           title= "المراجعة">
+           <Reviwes/>
+      </Tab>
+      
+    </Tabs>
+     
+         
+
+       </div>
+
+    </>
   );
 }
 

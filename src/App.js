@@ -25,56 +25,14 @@ import { BrowserRouter  as Router , Route , Routes } from 'react-router-dom';
 
 function App() {
 
-
-  // const route = createBrowserRouter( [
-  //  { element : <Navbar/> ,
-  //    children : [
-  //   {
-  //     path :'/Store',
-  //     element : <Store/>
-  //   },
-  //   {
-  //     path :'/Analys',
-  //     element : <Analys/>
-  //   } , 
-  //   {
-      
-  //   }
-  //  ]
-
-
-
-
-  //  }
-  // ]
-    
-   
-  // )
   return (
-    //   <Fragment>
-    //     {/* <HeaderLogin/> */}
-    //    <Navbar/> 
-    //       {/* <Rejester/>  */}
-    //     {/* <Home/> */}
-    //      <Store/>
-    //    {/* <Footer/>  */}
-    //    {/* <SupportCards/> */}
-    //  {/* <Check/> */}
-    //  {/* <SucessCheck/> */}
-    //     {/* <ForgetPasswords/> */}
-    //    {/* <ContactUs/> */}
-    //   </Fragment>
-  // <div>
-  //   <RouterProvider router={route}/>
-    
-  // </div>
-
   <>
 
   <Router>
-
+    {/* import navbar  */}
   <Navbar/>
     
+
     <Routes>
     <Route path='/store' element={<Store/>}></Route>
     <Route path='/analys' element = {<Analys/>}></Route>
@@ -83,13 +41,12 @@ function App() {
     <Route path='/suppliers' element = {<Suppliers/>}></Route>
     <Route path='/profile' element = {<Profile/>}></Route>
     </Routes>
+   
 
+   {/* import footer */}
     <Footer/>
     
   </Router>
-  
-  
-  
   </>
    
   );
