@@ -151,7 +151,7 @@ function Store() {
                   <div>
                     {/* فقط للتجربة في الوقت الحالي  */}
              
-                     <div className='row'  style={{ width: '70rem' }}>
+                     <div className='row px-4'  style={{ width: '70rem' }}>
                       {cardDetails.map((product)=> (
                        <StoreCard className = 'col'   imgProduct = {product.imgProduct} 
                         title = {product.title}

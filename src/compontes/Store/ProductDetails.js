@@ -2,19 +2,18 @@ import React, { useState } from "react";
 
 // use bootstrap react
 import Carousel from "react-bootstrap/Carousel";
+import { Row, Col, Image , Nav, Tabs , Tab } from "react-bootstrap";
 
 //icons
 import { BsStarFill, BsStar, BsFillCartFill } from "react-icons/bs";
 
-//images
-import productImage from "../../assets/images/storeDetails.png";
-import productImage2 from "../../assets/images/coffee.png";
-import { Row, Col, Image , Nav, Tabs , Tab } from "react-bootstrap";
 
-import StoreCard from "./StoreCard";
+//import compontes
 import MoreDetails from "../Store/MoreDetails";
 import Reviwes from "./Reviwes";
 import { cardDetails } from "../../Data/CardData";
+import OtherProducts from "./OherProducts";
+
 
 function ProductDetails(props) {
 
@@ -166,10 +165,16 @@ function ProductDetails(props) {
       </Tab>
       
     </Tabs>
-     
-         
-
        </div>
+ 
+
+       {/* Show other Products */}
+      
+       <div className="mt-5">
+       <hr/>
+        <OtherProducts/>
+       </div>
+
 
     </>
   );

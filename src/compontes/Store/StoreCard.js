@@ -15,22 +15,22 @@ function StoreCard(props){
   return (
 
 
-        <div className = "card mx-2 mt-5 " 
-              style={{ width: '18rem' }}>
+        <div className = "card shadow mx-2 mt-5 mb-3  " 
+              style={{ width: '16rem' }}>
 
 
           <img src ={props.imgProduct} 
            style={{ height: '12rem' }} 
-           className='pt-1 rounded'/>
+           className='mt-2 rounded'/>
 
           <div className= "card-body">
-            <h2>{props.title}</h2>
+            <h4>{props.title}</h4>
             <p>{props.detailsProduct}</p>
             <p> {props.priceProduct}</p>
 
             <button 
             // onClick={<ProductDetails/>} 
-            className = "primary-btn rounded text-center">
+            className = "primary-btn rounded w-100 shadow ">
                أضف الى طلباتي
                <HiShoppingCart/>
               </button> 
