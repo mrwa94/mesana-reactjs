@@ -16,12 +16,13 @@ function Home() {
     const subtitle = " تعرف علينا و تصفح خدماتنا تعرف علينا و تصفح خدماتناتعرف علينا و تصفح خدماتناتعرف علينا و ";
    // const [ card , setCard] = useState([]);
     // company data cards
+    //Testing..
     const companydetails = [
 
-      {   image : {image} ,
+      {   image : 'https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg' ,
           name : 'اسم الشركة' ,
           type : 'نوع المنتج' ,
-          sale : '20%'
+          sale : ' العروض 20% '
        },
        {   image : {image} ,
        name : 'اسم الشركة' ,
@@ -68,7 +69,7 @@ sale : '20%'
          image : '' ,
          name : 'اسم الشركة' ,
          type : 'نوع المنتج' ,
-         sale : '100%'
+         sale : '100% '
        },
    
      ];

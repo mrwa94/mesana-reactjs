@@ -52,7 +52,7 @@ const Profile = () => {
             <Tab.Pane eventKey="first"> <ProfileDetails/> </Tab.Pane>
             <Tab.Pane eventKey="second"><MessageDirect/></Tab.Pane>
             <Tab.Pane eventKey="third">   <Chat/>  </Tab.Pane>
-            <Tab.Pane eventKey="four">   <   ProductDetails/>  </Tab.Pane>
+            <Tab.Pane eventKey="four">   </Tab.Pane>
 
          
           </Tab.Content>

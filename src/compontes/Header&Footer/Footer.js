@@ -46,7 +46,8 @@ const Footer = () => {
 
       <div>
       <Nav.Item>
-          <Nav.Link  className='link' herf= "/"  eventKey=""> المساعدة و التواصل معنا </Nav.Link>
+          <Nav.Link  className='link' herf= "/"  eventKey=""> 
+          <Link to={"/contactUS"}> المساعدة والتواصل معنا </Link>  </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
