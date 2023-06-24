@@ -6,7 +6,7 @@ function Login() {
   return (
 
     <Container className='mt-5 '>
-       <Form className=' p-5 '>
+       <Form className=' p-5  row  m-5 w-50 d-block '>
 
     <Form.Group className="mb-4  " controlId="phoneNumber">
       <Form.Label className='mx-2'>رقم الهاتف</Form.Label>

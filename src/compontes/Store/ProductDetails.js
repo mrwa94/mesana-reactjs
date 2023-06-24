@@ -27,6 +27,8 @@ function ProductDetails(props) {
     setCounter((counter) => counter - 1);
   };
 
+
+  const getprops = cardDetails;
   // image details by Carousel bootstrap
 
   const CarouselDetails = () => {
@@ -82,6 +84,9 @@ function ProductDetails(props) {
       <div className="col details-product w-50">
         <h4> {props.title}</h4>
         <p>  {props.detailsProduct} </p>
+          {/* go to a store website , i think   */}
+          <h5 className="" >{props.title}  اسم المنتج    </h5>
+          <h6 className="" >{props.title}  نوع المنتج    </h6>
 
         {/* rate products */}
         <div className="rate color">
@@ -92,20 +97,23 @@ function ProductDetails(props) {
           <BsStar className="text-warning" />
         </div>
 
-        {/* go to a store website , i think   */}
-        <a href=""> {props.storeName} </a>
-
-        <p className="">{props.priceProduct} </p>
+      
+        <a href="" > اسم المتجر   </a>
+        <h6 className="" >     السعر 130 SR   </h6>
+        
+     
 
         <div>
           {/* add to and remove from cart */}
           <div className="">
-            <input
-              placeholder="Please select size  "
-              className="mx-2 w-50 "
-              type="text"
-              value= ''
-            />
+            {/* select a item size ..  */}
+              <select className="form-select mx-2 w-50 d-inline " type = "text" id="" aria-label="" >
+                <option value="1">الرجاء تحديد الحجم </option>
+                <option value="2">S</option>
+                <option value="3">M</option>
+                <option value="4">L</option>
+              </select>
+ 
 
             <div className="d-inline ">
               <button className="btn btn-light border" onClick={increase}>
@@ -144,14 +152,16 @@ function ProductDetails(props) {
       <Tabs
          defaultActiveKey="detailsProduct"
          id="uncontrolled-tab-example"
-         className="mb-3"
+         className="mb-3 me-4"
         >
 
       <Tab eventKey="detailsProduct"
-           title= "تفاصيل المنتج">
+           title= "تفاصيل المنتج"
+           className="me-5"
+           >
              {cardDetails.map((item) => (
 
-               <MoreDetails moreDetails = {item.moreDetails} />
+               <MoreDetails  moreDetails = {item.moreDetails} />
 
              )
              )}

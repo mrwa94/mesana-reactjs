@@ -5,6 +5,7 @@ import HeaderLogin from './HeaderLogin';
 const SucessCheck = () => {
   return (
     <div >
+      
       <HeaderLogin/>
 
      <div className='text-center login-form pt-5  pb-5'>

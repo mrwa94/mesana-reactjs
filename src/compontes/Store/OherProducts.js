@@ -26,10 +26,10 @@ function OherProducts  (){
     <div>
 
     
-        <Container className='row mb-5 '>
+        <Container className='row mb-5  '>
             <Slider {...settings}> 
             {cardDetails.map((product)=> (
-                       <StoreCard className = 'col'   imgProduct = {product.imgProduct} 
+                       <StoreCard className = 'col '   imgProduct = {product.imgProduct} 
                         title = {product.title}
                          detailsProduct = {product.detailsProduct}
                          priceProduct = {product.priceProduct}

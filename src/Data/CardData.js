@@ -9,10 +9,11 @@ export const cardDetails =
     id: 1,
     imgProduct: { product },
     title: 'العنوان',
+    productType: 'حلويات',
     detailsProduct: 'تفاصيل',
     storeName: 'marwa store',
     priceProduct: '$ 100 ',
-    moreDetails: "About this item  USDA ORGANIC & FAIR TRADE INGREDIENTS: Fair trade & organic sugar combined with organic shikakai powder keeps your skin nourished, hydrated & smooth. Organic coconut-olive-hemp oils blend for a creamy castile lather—our soapmaking tradition!  HEAVENLY SCENTS: Pure essential oils and organic sugar make for a delightful aroma. An elegant addition to your bath and kitchen—Organic Sugar Soaps are good for washing hands, face, body & hair! Follow with Citrus Hair Rinse for silky smooth hair.",
+    moreDetails: "منتج جميل وانصح بالشراء",
     reviews: 'beutifull'
 
 
@@ -22,11 +23,12 @@ export const cardDetails =
     id: 2,
     imgProduct: { product },
     title: 'العنوان',
+    productType: 'ملابس',
     detailsProduct: 'تفاصيل',
     storeName: 'alhanouf store',
     priceProduct: '$ 100 ',
-    moreDetails: "About this item  USDA ORGANIC & FAIR TRADE INGREDIENTS: Fair trade & organic sugar combined with organic shikakai powder keeps your skin nourished, hydrated & smooth. Organic coconut-olive-hemp oils blend for a creamy castile lather—our soapmaking tradition!  HEAVENLY SCENTS: Pure essential oils and organic sugar make for a delightful aroma. An elegant addition to your bath and kitchen—Organic Sugar Soaps are good for washing hands, face, body & hair! Follow with Citrus Hair Rinse for silky smooth hair.",
-    reviews: 'beutifull'
+    moreDetails: "منتج جميل وانصح بالشراء",
+        reviews: 'beutifull'
 
 
   },
@@ -99,7 +101,7 @@ export const cardDetails =
     detailsProduct: 'تفاصيل',
     storeName: 'marwa store',
     priceProduct: '$ 100 ',
-    moreDetails: "About this item  USDA ORGANIC & FAIR TRADE INGREDIENTS: Fair trade & organic sugar combined with organic shikakai powder keeps your skin nourished, hydrated & smooth. Organic coconut-olive-hemp oils blend for a creamy castile lather—our soapmaking tradition!  HEAVENLY SCENTS: Pure essential oils and organic sugar make for a delightful aroma. An elegant addition to your bath and kitchen—Organic Sugar Soaps are good for washing hands, face, body & hair! Follow with Citrus Hair Rinse for silky smooth hair.",
+    moreDetails: "About this item  USDA ORGANIC & FAIR TRADE INGREDIENTS: Fair trade & organic.",
     reviews: 'beutifull'
 
 

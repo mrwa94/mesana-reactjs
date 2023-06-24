@@ -17,12 +17,17 @@ import Requests from './Pages/Requests/Requests';
 import Profile from './Pages/Profile/Profile';
 import Analys from './Pages/Analys/Analys';
 import ContactUS from './Pages/ContactUs/ContactUs';
+import Chat from './compontes/Profile/Chat'
 
 
 // router 
 import { BrowserRouter  as Router , Route , Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-
+import   SignUp from './Auth/SignUp.js';
+import   Login from './Auth/Login.js';
+import HeaderLogin from './compontes/Register-and-Login/HeaderLogin';
+import SelectLoction from './compontes/Cart/SelectLoction';
+import NewLocation from './compontes/Cart/NewLocation';
 
 
 
@@ -36,6 +41,7 @@ function App() {
   <Router>
     {/* import navbar  */}
   <Navbar/>
+  {/* <HeaderLogin/> */}
 
     
 
@@ -50,6 +56,14 @@ function App() {
     <Route path= '/cart' element = {<Cart/>} ></Route>
     <Route path= '/productDetails' element = {<ProductDetails/>} ></Route>
     <Route path='/contactUS' element= {<ContactUS/>}></Route>
+
+    <Route path='/Login' element= {<Login/>}></Route>
+    <Route path='/SignUP' element= {<SignUp/>}></Route>
+    <Route path='/chat' element= {<Chat/>}></Route>
+    <Route path='/location' element= {<SelectLoction/>}></Route>
+    <Route path = '/newLocation' element = {<NewLocation/>}></Route>
+
+    
     </Routes>
    
 

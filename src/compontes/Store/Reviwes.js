@@ -2,12 +2,12 @@ import React from 'react'
 
 const Reviwes = (props) => {
   return (
-    <div>
+    <div className='me-4'>
 
         {/****** View All comment ********************/}
 
-        <div>
-            view all comment
+        <div  className=''>
+          مشاهدة جميع التعليقات 
         </div>
 
  
