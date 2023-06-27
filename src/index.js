@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 //redux 
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import ProductsReducer from './compontes/Store/ProductsTest';
+import ProductsReducer from './Components/Store/ProductsTest';
 
 
 //redux 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardImg } from 'react-bootstrap'
+
 import card from '../../assets/images/card.png'
 
 const WalletCard = () => {

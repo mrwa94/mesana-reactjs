@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
-import ContactCard from '../../compontes/ContactUs/ContactCard';
+import ContactCard from '../../Components/ContactUs/ContactCard';
 
 
 //icons

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import '../styles/App.css'
 import { Container, Button, Form, Tabs, Tab } from 'react-bootstrap'
-import  Company  from '../compontes/Register-and-Login/Company'
-import  {Person}  from '../compontes/Register-and-Login/Person'
-import Check from '../compontes/Register-and-Login/Check'
-import SucessCheck from '../compontes/Register-and-Login/SucessCheck'
+import  Company  from '../Components/Register-and-Login/Company'
+import  {Person}  from '../Components/Register-and-Login/Person'
+import Check from '../Components/Register-and-Login/Check'
+import SucessCheck from '../Components/Register-and-Login/SucessCheck'
 
 
 function SignUp() {

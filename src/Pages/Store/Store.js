@@ -9,8 +9,8 @@ import { BsSearch } from "react-icons/bs";
 import { AiTwotoneFilter } from "react-icons/ai";
 
 //compontes
-import StoreCard from '../../compontes/Store/StoreCard';
-import ProductDetails from '../../compontes/Store/ProductDetails';
+import StoreCard from '../../Components/Store/StoreCard';
+import ProductDetails from '../../Components/Store/ProductDetails';
 import { cardDetails } from '../../Data/CardData';
 
 

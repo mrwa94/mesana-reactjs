@@ -9,7 +9,7 @@ const Cart = () => {
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li > <Link className='breadcrumb-item"' to = {'/location'}>  العنوان</Link></li>
+          <li > <Link className='breadcrumb-item"' to = {'/cartSetup'}>  العنوان</Link></li>
         </ol>
       </nav>
     </div>

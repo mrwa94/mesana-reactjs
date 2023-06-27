@@ -132,7 +132,7 @@ function StoreCard(props) {
 
         <Offcanvas.Body className='p-0 '>
           {/*  */}
-          <div className='h-20 w-100 row  border my-2 shadow border-info  rounded '>
+          <div className='h-20 w-100 row  border my-2 shadow border-color rounded '>
             <div className='col w-100  '>
               <img className=' w-100 h-100' src={props.imgProduct}></img>
             </div>

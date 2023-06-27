@@ -8,7 +8,6 @@ import { Button, Form, FormLabel } from 'react-bootstrap';
 const SelectLoction = () => {
 
     const [step, setStep] = useState(0);
-    const steps = ['location','paying','PaymentConfirmation'];
 
   {/* when clicked the button , show the new location div .. */}
     const [show , setshow] = useState(false);
@@ -48,7 +47,7 @@ const SelectLoction = () => {
         if (step === 0) {
           return (<SelectLoction />);
         }
-        else if (step == 1 ){
+        else if (step === 1 ){
           return (<Paying />);
         }
         else {
@@ -59,6 +58,7 @@ const SelectLoction = () => {
     
   return (
     <div className='px-5 pt-5 '>
+        {/* <h1>{steps[step]}</h1> */}
 
         {/* breadcrumb */}
     <nav aria-label="breadcrumb">
@@ -68,26 +68,16 @@ const SelectLoction = () => {
       </nav>
 
 
-   <div className='text-center'>
-    Stepper
-   <div className='prograssbar' style={{ width: step === 0 ? "33.3%" : step == 1 ? "66.6%" : "100%" }} > </div>
-   {steps?.map((step , i )=>{
-      <div key={i} >
-       <div key={i+1}>
-        <p>{step}</p>
-    </div>
-    </div>
-   })}
-   </div>
+  
 
           <div className='row'>
+            
               <div className='col'>
                   <div>
                       map
                   </div>
                  {/* we need to show and hidden div  */}
                   <Button>أختر موقعك</Button>
-
               </div>
               <div className='col'>
                   <Button className='primary-btn' onClick={() => { setshow(!show) }} > إضافة عنوان جديد </Button>
@@ -95,19 +85,10 @@ const SelectLoction = () => {
                     {/* when clicked the button , show the new location div .. */}
                       {show && <div> {addNewLocation()}</div>}
                   </div>
+                  
 
-
-                  <Button variant="primary" className='mx-2 primary-btn mt-3 ' type="submit" disabled={step == steps.length - 1}
-                      onClick={() => { setStep((currPage) => currPage + 1); }} >
-                      <label>{step == steps.length - 1 ? " تأكيد الطلب" : "التالي"}</label>
-                  </Button>
               </div>
           </div>
-
-
-  
-
-
     </div>
   )
 }
