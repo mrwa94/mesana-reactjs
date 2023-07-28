@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderLogin from '../compontes/HeaderLogin'
+// import HeaderLogin from '../compontes/HeaderLogin'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Login from '../../Auth/Login';
@@ -10,7 +10,7 @@ function Rejester() {
   return (
     
     <div>
-           <HeaderLogin/>
+           {/* <HeaderLogin/> */}
           <Container className='login-form tabs '>
               <Tabs  defaultActiveKey="login "
                      id=""

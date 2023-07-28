@@ -29,6 +29,11 @@ import NewLocation from './Components/Cart/Address';
 import Paying from './Components/Cart/Paying';
 import CartSetup from './Components/Cart/CartSetup';
 import Preview from './Pages/Requests/Preview';
+import ForgetPassword from './Components/Register-and-Login/ForgetPassword';
+import SucessCheck from './Components/Register-and-Login/SucessCheck';
+import   Rejester from './Components/Register-and-Login/Rejester';
+
+
 
 
 
@@ -59,13 +64,20 @@ function App() {
     <Route path='/contactUS' element= {<ContactUS/>}></Route>
 
     <Route path='/Login' element= {<Login/>}></Route>
-    <Route path='/SignUP' element= {<SignUp/>}></Route>
+    <Route path='/SignUp' element= {<SignUp/>}></Route>
+    <Route path='/Rejester' element= {<Rejester/>}></Route>
+  
+  
     <Route path='/chat' element= {<Chat/>}></Route>
     <Route path='/location' element= {<SelectLoction/>}></Route>
     <Route path = '/newLocation' element = {<NewLocation/>}></Route>
     <Route path = '/Paying' element =  {<Paying/>} ></Route>
     <Route path = '/cartSetup' element = {<CartSetup/>}></Route>
     <Route path = '/Preview' element = {<Preview/>}></Route>
+    <Route path = '/ForgetPassword' element = {<ForgetPassword/>}></Route>
+    <Route path = '/ SucessCheck' element = {<ForgetPassword/>}></Route>
+   
+    
 
     
     </Routes>

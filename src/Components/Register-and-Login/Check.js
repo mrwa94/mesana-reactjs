@@ -5,9 +5,9 @@ import HeaderLogin from './HeaderLogin'
 const Check = () => {
   return (
     <>
-           <HeaderLogin/>
+           {/* <HeaderLogin/> */}
    
-        <div className='login-form pt-5 pb-5   '>
+        <div className='login-form pt-1 pb-1   '>
 
         <h3 className='text-center  primary-btn'>   رسالة تحقق </h3>
      

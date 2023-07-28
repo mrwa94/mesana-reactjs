@@ -16,8 +16,16 @@ function SignUp() {
       return (<Person />);
     }
 
+    else if  (page == 1 ){
+      return (<Company/>);
+    }
+
+    else if  (page == 2 ){
+      return (<Check/>);
+    }
+
     else {
-      return (<Company />);
+      return (<SucessCheck/>)
     }
 
   }
@@ -26,18 +34,18 @@ function SignUp() {
   return (
 
 
-    <Container className='mt-5 '>
+    <Container className='mt-5  mb-5'>
 
 
 
       {/* form */}
-      <div className=' p-5 '>
+      <div className=' pb-5 '>
 
         {/* prograss bar */}
 
-        <div style={{ width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "100%" }} >
+        {/* <div style={{ width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "100%" }} >
 
-        </div>
+        </div> */}
 
 
 

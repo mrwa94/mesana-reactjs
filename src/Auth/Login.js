@@ -1,12 +1,12 @@
 import React from 'react'
 import { Form , Button, Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
 
-    <Container className='mt-5 '>
-       <Form className=' p-5  row  m-5 w-50 d-block '>
+    <Container className='mt-5 mb-5 '>
+       <Form className='  row   px-5 pb-5  d-block '>
 
     <Form.Group className="mb-4  " controlId="phoneNumber">
       <Form.Label className='mx-2'>رقم الهاتف</Form.Label>
@@ -20,7 +20,8 @@ function Login() {
       <Form.Control type="password" placeholder="********" className='input' />
     </Form.Group>
     <Form.Group className="mb- mx-3" controlId="formBasicCheckbox">
-    <a href='' className='forgetPassword'> هل نسيت كلمة المرور ؟ </a>
+    {/* <a href='' className='forgetPassword'> هل نسيت كلمة المرور ؟ </a> */}
+    <Link to = {'/ForgetPassword'} className='forgetPassword'>هل نسيت كلمة المرور ؟</Link>
     </Form.Group>
 
     <div className='text-center '>
