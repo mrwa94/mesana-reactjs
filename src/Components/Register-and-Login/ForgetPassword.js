@@ -7,7 +7,7 @@ const ForgetPassword = () => {
     <>
 
 
-      <div className='login-form pt-5 pb-5   '>
+      <div className='login-form pt-5 pb-5  mb-5 '>
 
         <h4 className='text-center pb-5 primary-btn'>نسيان كلمة المرور </h4>
 
