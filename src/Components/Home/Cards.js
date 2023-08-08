@@ -5,8 +5,8 @@ function Cards(props) {
 
 
   return (
-<div className=''>
-   <Card className='item '>
+ <div className=''>
+   <Card className='item m-2 '>
     <Card.Img variant="top" src={props.image} />
     <Card.Body>
       <Card.Title>{props.companyName}</Card.Title>

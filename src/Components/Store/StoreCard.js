@@ -1,5 +1,5 @@
 import React from 'react'
-import { Offcanvas } from 'react-bootstrap'
+import { Button, Offcanvas } from 'react-bootstrap'
 //import ProductDetails from './ProductDetails'
 import { useState } from 'react'
 //import image to test 
@@ -104,7 +104,7 @@ function StoreCard(props) {
         className='mt-2 rounded' />
 
       <div className="card-body">
-        <h4>{props.Title}</h4>
+        <h4>{props.title}</h4>
         <p>{props.detailsProduct}</p>
         <p> {props.priceProduct}</p>
 
@@ -113,9 +113,9 @@ function StoreCard(props) {
           أضف الى طلباتي
           <HiShoppingCart />
         </button>
-        <button>
+        <Button className=" skyblue-color mt-2 rounded w-100 shadow">
           <Link to={'/productDetails'}>  تفاصيل المنتج</Link>
-        </button>
+        </Button>
          </div>
       </div>
 

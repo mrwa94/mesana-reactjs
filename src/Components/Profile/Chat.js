@@ -67,6 +67,9 @@ export const Chat = () => {
                <MdLocationOn className='icon-header title'/>
                   <p className='d-inline px-3 fs-5 title'> saudi arabia </p>
               </div>
+              <div>
+                
+              </div>
 
 
 

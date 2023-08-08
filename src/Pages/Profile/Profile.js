@@ -29,15 +29,24 @@ const Profile = () => {
               <Nav.Link eventKey="third">اللغة</Nav.Link>
             </Nav.Item>
 
+
+
+            {/*   if user is supplier  , show this item   */}
             <Nav.Item>
-                <Nav.Link eventKey="four"> الشروط و الأحكام</Nav.Link>
+                <Nav.Link eventKey="four">  المنتجات </Nav.Link>
+            </Nav.Item>
+
+            
+
+            <Nav.Item>
+                <Nav.Link eventKey="five"> الشروط و الأحكام</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link eventKey={"five"}> الخروج</Nav.Link>
+                <Nav.Link eventKey={"six"}> الخروج</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey={"six"}> إغلاق الحساب</Nav.Link>
+                <Nav.Link eventKey={"seven"}> إغلاق الحساب</Nav.Link>
             </Nav.Item>
           </Nav>
 
@@ -51,7 +60,7 @@ const Profile = () => {
           <Tab.Content>
             <Tab.Pane eventKey="first"> <ProfileDetails/> </Tab.Pane>
             <Tab.Pane eventKey="second"><MessageDirect/></Tab.Pane>
-            <Tab.Pane eventKey="third">   <Chat/>  </Tab.Pane>
+            <Tab.Pane eventKey="third">     </Tab.Pane>
             <Tab.Pane eventKey="four">   </Tab.Pane>
 
          

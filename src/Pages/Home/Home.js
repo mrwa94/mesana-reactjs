@@ -20,7 +20,7 @@ function Home() {
     const companydetails = [
 
       {   image : 'https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg' ,
-          name : 'اسم الشركة' ,
+          name : ' الشركة' ,
           type : 'نوع المنتج' ,
           sale : ' العروض 20% '
        },
@@ -90,7 +90,7 @@ sale : '20%'
             <h5 className='pb-5'>موردينا و تجارنا</h5>
             <div className='wrapper '>
             {companydetails.map((item) => (
-                <Cards image = {item.image} companyName = {item.name} typeProduct = {item.type} details = {item.sale}/>
+                <Cards  image = {item.image} companyName = {item.companyName} typeProduct = {item.type} details = {item.sale}/>
              ))}
 
             </div>

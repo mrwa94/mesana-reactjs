@@ -110,6 +110,11 @@ a:hover {
   
 }
 
+.gray-color{
+   background-color: var(--gray) !important;
+
+}
+
 
 
 /* table */
@@ -186,6 +191,7 @@ a:hover {
 
 
 /********** sign-up page  ************/
+
 
 /******** Check componte **********/
 .boarder {

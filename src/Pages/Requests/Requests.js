@@ -10,7 +10,7 @@ const Requests = () => {
 
 
   return (
-    <div className='container  border-color m-5 '>
+    <div className='container  border-color mt-5 mb-3'>
       <table class=" table table-hover primary-text-color mt-3 ">
      <thead  >
     <tr >

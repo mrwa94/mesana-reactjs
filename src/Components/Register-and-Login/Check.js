@@ -19,7 +19,9 @@ const Check = () => {
                 <Form.Control type="text" className='boarder'></Form.Control> 
                 <Form.Control type="text" className='boarder'></Form.Control> 
                 <Form.Control type="text" className='boarder'></Form.Control> 
-                <Form.Control type="text" className='boarder'></Form.Control>    
+                <Form.Control type="text" className='boarder'></Form.Control>  
+               
+             
               </div>
 
 
