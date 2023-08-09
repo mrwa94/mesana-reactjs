@@ -32,6 +32,7 @@ import Preview from './Pages/Requests/Preview';
 import ForgetPassword from './Components/Register-and-Login/ForgetPassword';
 import SucessCheck from './Components/Register-and-Login/SucessCheck';
 import   Rejester from './Components/Register-and-Login/Rejester';
+import AddItem from './Components/Profile/AddProducts/AddItem';
 
 
 
@@ -75,7 +76,8 @@ function App() {
     <Route path = '/cartSetup' element = {<CartSetup/>}></Route>
     <Route path = '/Preview' element = {<Preview/>}></Route>
     <Route path = '/ForgetPassword' element = {<ForgetPassword/>}></Route>
-    <Route path = '/ SucessCheck' element = {<ForgetPassword/>}></Route>
+    <Route path = '/SucessCheck' element = {<ForgetPassword/>}></Route>
+    <Route path = '/addItem' element = {<AddItem/>} ></Route>
    
     
 

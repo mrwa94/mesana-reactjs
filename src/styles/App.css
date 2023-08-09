@@ -12,6 +12,7 @@
    --base-color: #FAFAFA;
    --sec-color: #EB455F;
    --skyBlue: #BAD7E9;
+   --med-gray: #818387;
 
    /* fonts */
    --primary-font: 'IBM Plex Sans';
@@ -44,6 +45,17 @@
 }
 
 .link-hover {}
+
+
+/* color  */
+
+.skyBlue{
+   color: var(--skyBlue) !important;
+}
+
+.gray {
+   color: var(--med-gray) !important;
+}
 
 
 
@@ -104,12 +116,11 @@ a:hover {
    border-radius: 10px !important;
 }
 
-/* sky blue */
+/*  backgraound colors  */
 .skyblue-color {
    background-color: var(--skyBlue) !important;
   
 }
-
 .gray-color{
    background-color: var(--gray) !important;
 

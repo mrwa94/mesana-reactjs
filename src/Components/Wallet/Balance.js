@@ -62,6 +62,7 @@ export const Balance = () => {
                                             <Nav.Link eventKey="third"> STC Pay
                                             <IoIosArrowBack className='text-start'/>
                                             </Nav.Link>
+
                                         </Nav.Item>
                                         <Nav.Item>
                                             <Nav.Link eventKey="four"> التحويل البنكي

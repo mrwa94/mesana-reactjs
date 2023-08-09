@@ -3,6 +3,7 @@ import {  Col , Nav , Row , Tab} from 'react-bootstrap'
 import ProfileDetails from '../../Components/Profile/ProfileDetails'
 import MessageDirect from '../../Components/Profile/MessageDirect'
 import { Chat } from '../../Components/Profile/Chat'
+import AddNewProduct from '../../Components/Profile/AddProducts/AddNewProduct'
 
 
 
@@ -15,7 +16,7 @@ const Profile = () => {
       <Row >
 
         {/* profile list */}
-        <Col sm={2} className = "baseColor">
+        <Col sm={2} className = "baseColor text-center">
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
               <Nav.Link className='link-hover' eventKey="first">الملف الشخصي</Nav.Link>
@@ -29,9 +30,9 @@ const Profile = () => {
               <Nav.Link eventKey="third">اللغة</Nav.Link>
             </Nav.Item>
 
-
-
             {/*   if user is supplier  , show this item   */}
+
+
             <Nav.Item>
                 <Nav.Link eventKey="four">  المنتجات </Nav.Link>
             </Nav.Item>
@@ -61,7 +62,7 @@ const Profile = () => {
             <Tab.Pane eventKey="first"> <ProfileDetails/> </Tab.Pane>
             <Tab.Pane eventKey="second"><MessageDirect/></Tab.Pane>
             <Tab.Pane eventKey="third">     </Tab.Pane>
-            <Tab.Pane eventKey="four">   </Tab.Pane>
+            <Tab.Pane eventKey="four">  <AddNewProduct/> </Tab.Pane>
 
          
           </Tab.Content>
