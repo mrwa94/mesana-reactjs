@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProductsName from '../AddProducts/ProductsName'
+import ProductsName from './ProductsName'
 import ProductType from './ProductType'
 import MoreDetailsProduct from './MoreDetailsProduct'
 import ProductTags from './ProductTags'

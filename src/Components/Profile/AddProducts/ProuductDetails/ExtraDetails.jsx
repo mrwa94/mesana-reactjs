@@ -50,6 +50,7 @@ export const ExtraDetails = () => {
                 </Form.Group>
         </Form>
          
+         
          <div className='mt-3'>
          <input className='' placeholder=''  type='checkbox'/>
             <p className='d-inline mx-2  nav-link'>Enable reviews</p>

@@ -16,7 +16,7 @@ const Profile = () => {
       <Row >
 
         {/* profile list */}
-        <Col sm={2} className = "baseColor text-center">
+        <Col sm={2} className = "baseColor text-center ">
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
               <Nav.Link className='link-hover' eventKey="first">الملف الشخصي</Nav.Link>

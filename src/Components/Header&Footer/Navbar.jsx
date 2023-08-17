@@ -27,7 +27,7 @@ function navbar() {
 
 <Navbar className='navbar' bg="light" dir='rtl' expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
             <img src={logo}></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

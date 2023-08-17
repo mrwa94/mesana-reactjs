@@ -31,7 +31,7 @@ export const Person = () => {
 
           <Form.Group className="mb-3 col-md-6" controlId="">
            <Form.Label>   تاريخ انتهاء السجل  </Form.Label>
-           <Form.Control type="text" placeholder="Aa1122"  className='input p-2'/>
+           <Form.Control type="date"  className='input p-2'/>
             </Form.Group>
   
       </div>
@@ -52,8 +52,6 @@ export const Person = () => {
    <Form.Check aria-label="option 1" className='p-1  d-inline' />
    <Form.Label>  الموافقة على الشروط و الأحكام  </Form.Label>
  </FormGroup>
- 
-
  </div>
     </div>
       

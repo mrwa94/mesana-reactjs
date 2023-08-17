@@ -9,7 +9,7 @@ import { BsStarFill, BsStar, BsFillCartFill } from "react-icons/bs";
 
 
 //import compontes
-import MoreDetails from "../Store/MoreDetails";
+import MoreDetails from "./MoreDetails";
 import Reviwes from "./Reviwes";
 import { cardDetails } from "../../Data/CardData";
 import OtherProducts from "./OherProducts";
